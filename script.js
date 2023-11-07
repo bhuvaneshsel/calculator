@@ -1,7 +1,5 @@
 let x = "";
 let y = "";
-let firstNumber;
-let secondNumber;
 let operator ="";
 
 let doMultiplication = false;
