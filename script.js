@@ -83,6 +83,33 @@ numberButtons.addEventListener("click", (e) => {
     }
 })
 
+numberButtons.addEventListener("mouseover", (e) => {
+    console.log(e.target.type);
+    if (e.target.type === "submit") {
+        e.target.style.cssText = "background-color: rgba(0,0,0,0.1)"
+    }
+})
+
+numberButtons.addEventListener("mouseout", (e) => {
+    console.log(e.target.type);
+    if (e.target.type === "submit") {
+        e.target.style.cssText = "background-color: rgb(251, 237, 240)"
+    }
+})
+
+numberButtons.addEventListener("mousedown", (e) => {
+    console.log(e.target.type);
+    if (e.target.type === "submit") {
+        e.target.style.cssText = "background-color: rgba(0,0,0,0.3)";
+    }
+})
+numberButtons.addEventListener("mouseup", (e) => {
+    console.log(e.target.type);
+    if (e.target.type === "submit") {
+        e.target.style.cssText = "background-color: rgba(0,0,0,0.1)";
+    }
+})
+
 equals.addEventListener("click", (e) => {
 
     if (doMultiplication === true) {
