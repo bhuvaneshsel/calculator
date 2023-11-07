@@ -136,8 +136,8 @@ equals.addEventListener("click", (e) => {
                 display.textContent = (x/y).toFixed(3);
             }
         }
-        
-       
+    } else {
+        display.textContent = x;
     }
 
 
